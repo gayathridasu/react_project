@@ -242,13 +242,12 @@ var a = [
   ]
   
 
-var ret_val = a.map((val,ind)=>{
+var ret_val = a.filter((val,ind)=>{
     
 
     return(
     <>
     <tr key={ind}>
-      
         <td>{val["id"]}</td>
         <td>{val["title"]}</td>
         <td>{val["price"]}</td>
@@ -262,7 +261,7 @@ var ret_val = a.map((val,ind)=>{
     
     )
 });
-function Display(){
+function Dis(){
 
     return(
 
@@ -275,4 +274,4 @@ function Display(){
     )
 }
 
-export default Display;
+export default Dis;
